@@ -807,3 +807,204 @@ font-size:15px;
   z-index: -1;
   filter: brightness(0.28);
 }
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+@media (max-width: 992px){
+  .hero,
+  .about,
+  .contact-container,
+  .education-container,
+  .projects-grid,
+  .certifications-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left,
+  .right,
+  .about-left,
+  .about-right,
+  .contact-left,
+  .contact-right{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-oval{
+    border-radius: 30px;
+    padding: 35px 25px;
+    max-width: 100%;
+  }
+
+  .project-images{
+    gap: 20px;
+  }
+
+  .project-images img{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px){
+  header{
+    padding: 15px 5%;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li{
+    list-style: none;
+  }
+
+  .logo{
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul{
+    width: 100%;
+  }
+
+  nav ul li a{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+
+  h2{
+    font-size: 26px;
+  }
+
+  h3{
+    font-size: 22px;
+  }
+
+  p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .section-title{
+    font-size: 28px;
+    margin: 70px 0 30px;
+  }
+
+  .projects,
+  .project-detail,
+  .contact-section,
+  .education-section,
+  .certifications-section,
+  .about{
+    padding: 100px 6% 60px;
+  }
+
+  .project-card{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .project-card img{
+    height: auto;
+  }
+
+  .project-links{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-github,
+  .btn-linkedin{
+    width: 200px;
+    text-align: center;
+  }
+
+  .contact-box{
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+
+  .name-row{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-right input,
+  .contact-right textarea,
+  .contact-right button{
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px){
+  .logo{
+    font-size: 20px;
+  }
+
+  nav ul{
+    gap: 10px;
+  }
+
+  nav ul li a{
+    font-size: 13px;
+  }
+
+  h1{
+    font-size: 26px;
+  }
+
+  h2{
+    font-size: 22px;
+  }
+
+  .section-title{
+    font-size: 24px;
+  }
+
+  .project-oval{
+    padding: 25px 18px;
+  }
+
+  .oval-heading{
+    font-size: 22px;
+  }
+
+  .contact-left h2{
+    font-size: 28px;
+  }
+}
